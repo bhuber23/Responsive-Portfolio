@@ -108,6 +108,7 @@ body {
     background: #666666;
     border-top: 8px solid #4aaaa5;
     height: 50px;
+    margin-top: 500px;
   }
   
   h3, h2 {
@@ -224,24 +225,65 @@ body {
     }
 
     header {
-      width: 60%;
+      width: 100%;
       margin-left: 40px;
-      float: left;
+      padding: 0 40px 0 40px;
     }
   }
 
   @media screen and (max-width: 768px) {
     .main-section {
-      width: 100%;
+      width: 95%;
+      margin-left: 20px;
+    
       
     }
-    .container {
+
+    header {
       width: 100%;
-      margin-left: 40px;
     }
+    
+    #logo {
+      float: left;
+      margin-left: -20px;
+    }
+
+    nav a {
+      margin-right: -20px;
+    
+    }
+  
 
   }
   
   @media screen and (max-width: 640px) {
+
+    #logo {
+      position: static;
+      width: 100%;
+      margin: 0;
+    }
+
+    #masthead {
+      margin-left: 0;
+     
+    }
+
+    nav a {
+      text-align: center;
+      position: relative;
+      
+      
+    }
+
+    .main-section {
+      margin-top: 40px;
+    }
+
+    .auth-image {
+      width: 100%;
+    }
+
+    
 
   }
